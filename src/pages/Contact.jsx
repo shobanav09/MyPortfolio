@@ -16,7 +16,7 @@ export const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_meucd9q', 'template_jwhg0r9', form.current, 'WDvK1bbaDozy1tQYR')
+      .sendForm('service_2b4abo9', 'template_a378ysg', form.current, 'lBsXNkcLNOt8RbFYJ')
       .then(
         () => {
           console.log('SUCCESS!');
@@ -53,17 +53,17 @@ export const Contact = () => {
           </div>
 
           <div className='flex flex-col gap-12 '>
-            <input className='border border-solid border-black px-4 max-[450px]:px-2 py-1 rounded-[4px]' required type="text" name="from_name" placeholder='eg.shobana' />
-            <input className='border border-solid border-black px-4 max-[450px]:px-2 py-1 rounded-[4px]' required type="email" name="from_email" placeholder='eg.shobana@gmail.com' />
-            <textarea className='border border-solid border-black px-4 max-[450px]:px-2 py-6 rounded-[4px]' required name="message" />
+            <input className='border border-solid border-[white] px-4 max-[450px]:px-2 py-1 rounded-[4px]' required type="text" name="from_name" placeholder='eg.shobana' />
+            <input className='border border-solid border-white px-4 max-[450px]:px-2 py-1 rounded-[4px]' required type="email" name="from_email" placeholder='eg.shobana@gmail.com' />
+            <textarea className='border border-solid border-white px-4 max-[450px]:px-2 py-6 rounded-[4px]' required name="message" />
 
-            <button className='font-bold font-para text-xl max-[450px]:text-[16px] border border-solid border-black rounded-[8px] bg-black text-white py-1 hover:bg-white hover:text-black' type="submit" value="Send">Send</button>
+            <button className='font-bold font-para text-xl max-[450px]:text-[16px] border border-solid border-white rounded-[8px] bg-black text-white py-1 hover:bg-white hover:text-black' type="submit" value="Send">Send</button>
           </div>
         </div>
       </form>
 
         <div className='flex gap-28 m-[50px] justify-center items-center  max-[450px]:gap-10'   data-aos='flip-up'>
-            <a href="https://github.com/Selva717" target='_blank'>
+            <a href="https://github.com/shobanav09" target='_blank'>
               <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#000000]">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
                   <path
@@ -72,7 +72,7 @@ export const Contact = () => {
               </span>
             </a>
 
-            <a href="https://www.linkedin.com/in/selva-kumar-m-430bb2267/"  target='_blank'>
+            <a href="https://www.linkedin.com/in/shobanav09/"  target='_blank'>
               <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#0077b5]">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                   <path
@@ -81,7 +81,7 @@ export const Contact = () => {
               </span>
             </a>
 
-            <a href="https://www.instagram.com/selva_7_/"  target='_blank'>
+            <a href="https://www.instagram.com/shobana_04_/"  target='_blank'>
               <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#c13584]">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                   <path
@@ -90,8 +90,8 @@ export const Contact = () => {
               </span>
             </a>
 
-            <a href="https://twitter.com/selva_7_"   target='_blank'>
-              <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-black">
+            <a href="https://x.com/Shobana1902"   target='_blank'>
+              <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"

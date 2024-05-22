@@ -15,17 +15,19 @@ const Navbar = () => {
     window.scrollTo(0, 0)
   }, [location.pathname])
 
-  const homeloc = location.pathname === '/'? 'font-bold border-b-[3px] border-[black]':'text-[black]'
+  const homeloc = location.pathname === '/'? 'font-bold text-[white] border-b-[3px] border-[white]':'text-[white] '
 
-  const aboutloc = location.pathname === '/about'? 'font-bold border-b-[3px] border-[black]':'text-[black]'
+  const experienceloc = location.pathname === '/experience' ? 'font-bold text-[white] border-b-[3px] border-[white]':'text-[white] '
 
-  const projectloc = location.pathname === '/project'? 'font-bold border-b-[3px] border-[black]':'text-[black]'
+  const aboutloc = location.pathname === '/about'? 'font-bold text-[white] border-b-[3px] border-[white]':'text-[white]'
 
-  const contactloc = location.pathname === '/contact'? 'font-bold border-b-[3px] border-[black]':'text-[black]'
+  const projectloc = location.pathname === '/project'? 'font-bold text-[white] border-b-[3px] border-[white]':'text-[white]'
+
+  const contactloc = location.pathname === '/contact'? 'font-bold text-[white] border-b-[3px] border-[white]':'text-[white]'
   
 
   return (
-   <div className='sticky top-0 z-50 border-b-[2px]'>
+   <div className='sticky top-0 z-50 py-4'>
    {/* for laptop screens */}
      <div className='flex items-center w-[100%] mx-[auto] justify-between px-[82px] py-[10px] relative '>
         <div className="font-heading font-bold text-2xl">Shobana V</div>
@@ -34,6 +36,7 @@ const Navbar = () => {
             <Link to='/' className={`hover:font-bold ${homeloc}`}>HOME</Link>
             <Link to='/about'  className={`hover:font-bold ${aboutloc}`}>ABOUT</Link>
             <Link to='/project'  className={`hover:font-bold ${projectloc}`}>PROJECTS</Link>
+            <Link to='/experience' className={`hover:font-bold ${experienceloc}`}>EXPERIENCE</Link>
             <Link to='/contact' className={`hover:font-bold ${contactloc}`}>CONTACT</Link>
         </div>
 
@@ -54,7 +57,9 @@ const Navbar = () => {
                 <Link onClick={handleMenu} to='/' className='p-3 hover:font-bold'>HOME</Link>
                 <Link onClick={handleMenu} to='/about' className='p-3 hover:font-bold'>ABOUT</Link>
                 <Link onClick={handleMenu} to='/project' className='p-3 hover:font-bold'>PROJECTS</Link>
+                <Link onClick={handleMenu} to='/project' className='p-3 hover:font-bold'>EXPERIENCE</Link>
                 <Link onClick={handleMenu} to='/contact' className='p-3 hover:font-bold'>CONTACT</Link>
+
               </div>
             </div>
           )

@@ -64,7 +64,7 @@ const TechStack = () => {
     },[])
   return (
     <>
-        <div className='w-[80%]  mx-auto font-heading text-3xl font-medium mb-11'>Tech Stack</div>
+        <div className='w-[80%]  mx-auto font-heading text-3xl font-medium mb-11 text-center'>Tech Stack</div>
         <div className='mb-[120px]'>
             <div className='w-[80%]  mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4  rounded-[12px]'>
                 {techstack.map((data, index) => (
